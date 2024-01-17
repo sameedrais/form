@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .table2 {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .data2 {
+            border: 2px solid darkslateblue;
+            padding: 8px;
+            text-align: center;
+            align-content: center;
+        }
+        body {
+            font-size: larger;
+            background-color: #D6EAF8;
+        }
+        h1{
+            text-align: center;
+        }
+        h3 {
+            background-color: darkslateblue;
+            color: aliceblue;
+        }
+        table {
+            width: 100%
+        }
+        .number {
+            width: 3%;
+        }
+        .instruction {
+            width: 20%;
+        }
+        #name {
+            width: 80%;
+        }
+        .input {
+            width: 40%;
+        }
+        .radio {
+            display: inline-block;
+        }
+        .input100 {
+            width: 100%;
+            background-color: #D6EAF8;
+            border-color:  #D6EAF8;
+        }
+    </style>
+    <title>Application Form</title>
+</head>
+<body>
+    <form action="">
+        <h1>Application Form</h1>
+        <h3>A. General Questions</h3>
+        <table>
+            <tr>
+                <td class="number">1.</td>
+                <td class="instruction">Proposed Insured's Name:</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td class="number">2.</td>
+                <td class="instruction">Birth Day:</td>
+                <td><input type="date" class="input"></td>
+            </tr>
+            <tr>
+                <td class="number">3.</td>
+                <td class="instruction">Gender:</td>
+                <td>
+                    <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">4.</td>
+                <td class="instruction">Address:</td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td class="number">5.</td>
+                <td class="instruction">Phone Number:</td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td class="number">6.</td>
+                <td class="instruction">Email Address:</td>
+                <td><input type="email" class="input"></td>
+            </tr>
+            <tr>
+                <td class="number">7.</td>
+                <td class="instruction">ID Number:</td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td class="number">8.</td>
+                <td class="instruction">Social Security Number:</td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td class="number">9.</td>
+                <td class="instruction">Status:</td>
+                <td>
+                    <input type="radio" name="status" id="single"><label for="single">Single</label>
+                    <input type="radio" name="status" id="married"><label for="married">Married</label>
+                    <input type="radio" name="status" id="devorced"><label for="devorced">Devorced</label>
+                    <input type="radio" name="status" id="others"><label for="others">Others</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">10.</td>
+                <td class="instruction">Social Security Number:</td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td class="number">11.</td>
+                <td class="instruction">Are you a retiree?</td>
+                <td>
+                    <input type="radio" name="retiree" id="yes"><label for="yes">Yes</label>
+                    <input type="radio" name="retiree" id="no"><label for="no">No</label>
+                </td>
+            </tr>
+        </table>
+
+        <h3>B. Type of Health Coverage</h3>
+        
+        <table class="table2">
+            <tr>
+                <td class="data2">
+                    <span>Employee:</span>
+                    <span class="radio">
+                        <input type="radio" name="Employee" id="yes"><label for="yes">Yes</label>
+                        <input type="radio" name="Employee" id="no"><label for="no">No</label>
+                    </span>
+                </td>
+                <td class="data2">
+                    <span>Spouse:</span>
+                    <span class="radio">
+                        <input type="radio" name="Spouse" id="yes"><label for="yes">Yes</label>
+                        <input type="radio" name="Spouse" id="no"><label for="no">No</label>
+                    </span>
+                    
+                </td>
+                <td class="data2">
+                    <span>Children:</span>
+                    <span class="radio">
+                        <input type="radio" name="Children" id="yes"><label for="yes">Yes</label>
+                        <input type="radio" name="Children" id="no"><label for="no">No</label>
+                    </span>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div>
+            Complete If Spouse/Children are Proposed for Insurance:
+        </div>
+        <table class="table2">
+            <tr>
+                <th class="data2">Name</th>
+                <th class="data2">SSN No.</th>
+                <th class="data2">Relationship to proposed insured</th>
+                <th class="data2">Birth Day</th>
+                <th class="data2">Age</th>
+                <th class="data2">Sex</th>
+            </tr>
+            <tr>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+            </tr>
+            <tr>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+            </tr>
+            <tr>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+            </tr>
+            <tr>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+                <td class="data2"><input type="text" class="input100"></td>
+            </tr>
+        </table>
+
+        <h3>C. The Policy</h3>
+
+        <table>
+            <tr>
+                <td class="number">1.</td>
+                <td class="instruction">Units:</td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td class="number">2.</td>
+                <td class="instruction">Annual Premium:</td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td class="number">3.</td>
+                <td class="instruction">Payment Mode:</td>
+                <td>
+                    <input type="radio" name="PaymentMode" id="Annual"><label for="Annual">Annual</label>
+                    <input type="radio" name="PaymentMode" id="Semi-Anuual"><label for="Semi-Anuual">Semi-Anuual</label>
+                    <input type="radio" name="PaymentMode" id="PAT"><label for="PAT">Monthly PAT</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">4.</td>
+                <td class="instruction">Cash with Application:</td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td class="number">5.</td>
+                <td class="instruction">Planned modal premium:</td>
+                <td><input type="text" class="input"></td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr>
+                <td rowspan="2" style="width: 60%;">
+                    <h2 style="color: darkslateblue;">Terms & Conditions</h2>
+                    <p style="color: darkslateblue;">Improvement should be measured regularly and assessed in order for you to know what's beneficial and what is not. This will help you set new targets.</p>
+                </td>
+                <td colspan="2">
+                    <div>Signature:</div>
+                    <input type="text" name="Signature" id="signature" style="width: 70%;">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 2%;">Date:</td>
+                <td><input type="date" style="width: 70%;"></td>
+
+            </tr>
+        </table>
+    </form>
+    <br><br><br>
+    <footer>Created by Muhammad Sameed</footer>
+</body>
+</html>
